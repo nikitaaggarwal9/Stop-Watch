@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1c1c1d;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------------------------------------- watch container ---------------------------------------------- */
+.watch {
+    height: 33%;
+    width: 40%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    background-color: #080808;
+    color: rgb(253, 253, 253);
+    font-size: 4.5rem;
+    font-family: 'Fira sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* -------------------------------- time display container -------------------------------- */
+.time {
+    height: 40%;
+    width: 80%;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ms, sec, mins  */
+.dis {
+    height: 90%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* colons */
+.col {
+    height: 90%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------- buttons display container -------------------------------- */
+.controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* buttons: start, stop, reset */
+.controls button {
+    width: 25%;
+    background-color: rgb(24, 107, 130);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+}
+
+/* buttons on hovering */
+button:hover {
+    opacity: 0.7;
+}
+
+/* buttons when active */
+button:active {
+    background-color: black;
+}
+
+
+
+/* ------------------------------------------------------ responsiveness ------------------------------------------------------ */
+
+@media screen and (max-width: 768px) {
+    .watch {
+        width: 60%;
+        font-size: 3.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .watch {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    .controls button {
+        font-size: 1rem;
+        margin: 0 0.2rem;
+        padding: .5rem .5rem;
+    }
+}
