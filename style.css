@@ -40,7 +40,8 @@ body {
 /* ms, sec, mins  */
 .dis {
     height: 90%;
-    width: 30%;
+    width: 25%;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
